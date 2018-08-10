@@ -5,6 +5,7 @@
 	<title>Freethinker Fantasy, An Independent Imprint</title>
     <link rel="stylesheet" href="FFstyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
          <!--[if lt IE 9]>
               <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -20,18 +21,47 @@
         <a href="about.html">About A. Kat</a>
      </nav>
      <main>
-        <div class="main">
+     	<div class="signup">
+     	<form method="post" action="http://scripts.dreamhost.com/add_list.cgi">
+<table><input type="hidden" name="list" value="_MailingListName_" />
+<input type="hidden" name="domain" value="_DomainName_" />
+
+<!-- Optional: -->
+<input type="hidden" name="unsuburl" value="_http://UnsubscribedURL_" />
+<input type="hidden" name="alreadyonurl" value="_http://AlreadyOnURL_" />
+<input type="hidden" name="notonurl" value="_http://NotOnURL_" />
+<input type="hidden" name="invalidurl" value="_http://InvalidURL_" />
+<input type="hidden" name="emailconfirmurl" value="_http://EmailConfirmURL_" />
+<input type="hidden" name="emailit" value="1" />
+<tr><td>Name</td><td><input type="text" name="name" /></td></tr>
+
+<!-- Required: -->
+<tr><td>E-mail</td><td><input type="text" name="email" /></td></tr>
+
+<!-- Optional: -->
+<tr><td>Confirm E-mail</td><td><input type="text" name="address2" /></td></tr>
+
+<!-- Required: -->
+<tr><td><input type="submit" name="submit" value="Join the List" /></td><td></td></tr>
+
+<!-- Optional: -->
+<tr><td><input type="submit" name="unsub" value="Unsubscribe" /></td><td></td></tr>
+
+</table>
+</form>
+     	</div>
+        <div class="content">
            <h2>Freethinker Fantasy publishes the Inferno series by A. Kat</h2>
-           <blockquote>"Seamlessly combines philosophical themes with character development and old-school adventure &mdash; modern fantasy as it should be."</blockquote>
+           <blockquote>"Seamlessly combines philosophical themes with character development and old-school adventure&mdash;modern fantasy as it should be."</blockquote>
            <img src="images/inferno1cover.jpg" height="160" width="100" alt="Inferno 1">
            <p>Inferno: Cassandra's Call</p>
            <p>Buy it on Amazon</p>
-           <p>Buy it on iTunes</p>
+           <p><a href="https://geo.itunes.apple.com/us/book/inferno-cassandras-call/id1403204436?mt=11&at=1010lMFQ" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/ibooks-lrg.svg) no-repeat;width:112px;height:40px;background-size:contain;"></a> &nbsp;&nbsp;&nbsp;Buy it on iBooks</p>
            <p>Buy it on Kobo</p>
         </div>
      </main>
      <footer>
-        <p>&copy; 2018 A. Kat <a href="privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2018 A. Kat <a href="privacy.html">Privacy Policy</a> <a href="accessibility.html">Statement on Accessibility</a></p>
      </footer>
 </body>
 </html>

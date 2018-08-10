@@ -1,5 +1,4 @@
-body { background-color: #222222;
-           color: #FFFFFF; width: 95%; margin: auto;
+body { background-color: #222222; color: #FFFFFF;
            font-family: Ubuntu, sans-serif; }
 
 header { background-image: url(notebookstripe.png);
@@ -25,7 +24,11 @@ main a:link { color: #000000; }
 main a:visited { color: #000000; }
 main a:hover { color: #BBBB00; }
 
-footer { padding: 5px 0 20px 20px; 
+.signup { float: right; }
+
+.content { width: 80%; margin: auto; }
+
+footer { text-align: center; padding: 1em;
              background-color: #000000; color: #EEEEEE; }
 
 footer a:link { color: #FFFFFF; }

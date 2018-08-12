@@ -1,45 +1,45 @@
-body { background-color: #222222; color: #FFFFFF;
-           font-family: Ubuntu, sans-serif; }
+body { background-color: #000000; color: #FFFFFF;
+       font-family: Ubuntu, sans-serif; }
 
-header { background-image: url(notebookstripe.png);
-              padding-left: 10%;
-              color: #EEEEEE; }
+header { background-image: url(images/bigknife.jpg); background-size: cover;
+         color: #000000; padding-left: 10%; }
 
-header h1 { font-size: 3.5em; font-family: Shrikhand, cursive; margin-bottom: 0; }
+header h1 { font-size: 4em; font-family: Shrikhand, cursive; margin-top: 0;
+            padding-top: 5%; text-shadow: 0 0 5px #EEEEEE; }
+             
+header h2 { font-size: 3em; font-family: Ubuntu, sans-serif; padding-left: 2%;
+            font-style: italic; padding-bottom: 5%; margin-bottom: 0; text-shadow: 0 0 10px #FF8800; }
 
-header h2 { font-size: 2em; font-style: italic; }
-
-nav { background-image: url(leather.png); background-color: #000000; text-align: center;
-        padding: 0.7em; font-size: 2em; }
+nav { background-image: url(images/stockfirepic.jpg); background-color: #000000; text-align: center;
+        padding: 0.3em; font-size: 2em; font-family: Ubuntu, sans-serif; margin-bottom: 0; }
 
 nav a { text-decoration: none; padding-right: 70px; }
 
 nav a:link { color: #FFFFFF; }
 nav a:visited { color: #FFFFFF; }
-nav a:hover { text-shadow: 0px 0px 10px #FFFF00; }
+nav a:hover { text-shadow: 3px 3px 10px #FF8800; }
 
 main { background-color: #222222; }
 
-main a:link { color: #000000; }
-main a:visited { color: #000000; }
+main a:link { color: #FF8800; }
+main a:visited { color: #AAAAAA; }
 main a:hover { color: #BBBB00; }
 
-.signup { float: right; }
+.signup { background-color: #555555; }
 
 .content { width: 80%; margin: auto; }
+.content dt { font-size: 1.2em; font-weight: bold; padding-top: 2%; }
 
 footer { text-align: center; padding: 1em;
              background-color: #000000; color: #EEEEEE; }
 
 footer a:link { color: #FFFFFF; }
-footer a:hover { color: #0000FF; }
+footer a:visited { color: #AAAAAA; }
+footer a:hover { color: #FFFF00; }
 
-footer img { border-width: 0; }
 
 @media only screen and (max-width: 1024px) { 
               nav a { padding-right: 30px; }
-              .menu { display: none; }
-              .maincol { width: 95%; margin: auto; }
               footer { margin: auto; }
 }
 

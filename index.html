@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Freethinker Fantasy, An Independent Imprint</title>
   <link rel="stylesheet" href="FFstyles.css">
+  <link rel="icon" href="images/crest.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <!--[if lt IE 9]>
@@ -24,40 +25,54 @@
   <main>
     <div class="content">
         <h3>Welcome to modern fantasy as it should be&mdash;Inferno combines philosophical themes with character drama and old-school adventure.</h3>
-    <div class="signup">
-    <p>Join the mailing list to get the latest updates on new releases and more!</p>
-      <form method="post" action="http://scripts.dreamhost.com/add_list.cgi">
-<table><input type="hidden" name="list" value="updates" />
-<input type="hidden" name="domain" value="freethinkerfantasy.com" />
+        <blockquote>&ldquo;A really great book will grab the reader&rsquo;s attention from the very first sentence and never let it go. That&rsquo;s what this book does.  It&rsquo;s captivating from start to finish.&rdquo; &mdash;S.F.</blockquote>
+      <form name="signup" id="signup" method="post" action="http://scripts.dreamhost.com/add_list.cgi">
+        <h3>Subscribe to the newsletter to get the latest updates on new releases and more!</h3>
+<input type="hidden" name="list" value="updates">
+<input type="hidden" name="domain" value="freethinkerfantasy.com">
 
 <!-- Optional: -->
-<input type="hidden" name="emailconfirmurl" value="http://freethinkerfantasy.com/confirm.html" />
-<input type="hidden" name="emailit" value="1" />
-<tr><td>Name</td><td><input type="text" name="name" /></td></tr>
+<input type="hidden" name="emailconfirmurl" value="http://freethinkerfantasy.com/confirm.html">
+<input type="hidden" name="emailit" value="1">
+<label for="name">Name:</label><input id="name" type="text" name="name" size="50">
 
 <!-- Required: -->
-<tr><td>E-mail</td><td><input type="text" name="email" /></td></tr>
+<label for="email">E-mail:</label><input id="email" type="email" name="email" size="50" required="required">
 
 <!-- Optional: -->
-<tr><td>Confirm E-mail</td><td><input type="text" name="address2" /></td></tr>
+<label for="add2">Confirm E-mail:</label><input id="add2" type="email" name="address2" size="50">
 
 <!-- Required: -->
-<tr><td><input type="submit" name="submit" value="Join the List" /></td><td></td></tr>
+<input type="submit" id="sub" name="submit" value="Join the List">
 
 <!-- Optional: -->
-<tr><td><input type="submit" name="unsub" value="Unsubscribe" /></td><td></td></tr>
-
-</table>
+<input type="submit" id="unsub" name="unsub" value="Unsubscribe">
       </form>
-    </div>
-    <h2>Books Available Now</h2>
+    <h2>Available Now</h2>
+        <div class="book">
+        <img src="images/inferno1cover.jpg" height="320" width="200" alt="Inferno 1">
         <h3>Inferno #1: Cassandra&rsquo;s Call</h3>
-        <img src="images/inferno1cover.jpg" height="160" width="100" alt="Inferno 1">
         <p>Cassandra Blackthorne, an unusual noble with an unusual ability, recruits a reticent bounty hunter and a brash, street-fighting youth to join her on a daring quest.</p>
-        <p><a target="_blank" href="https://www.amazon.com/gp/product/B07DG3661D/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07DG3661D&linkCode=as2&tag=freethinkerfa-20&linkId=58eb98b2ae25a91ca33a18287ac0ec9f"><img src="images/amazonbadge.png" height="40" width="112"></a> &nbsp;&nbsp;&nbsp;Buy it on Amazon</p>
-        <p><a href="https://geo.itunes.apple.com/us/book/inferno-cassandras-call/id1403204436?mt=11&at=1010lMFQ" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/ibooks-lrg.svg) no-repeat;width:112px;height:40px;background-size:contain;"></a> &nbsp;&nbsp;&nbsp;Buy it on iBooks</p>
+        <table>
+        <tr>
+        <td><a target="_blank" href="https://www.amazon.com/gp/product/B07DG3661D/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07DG3661D&linkCode=as2&tag=freethinkerfa-20&linkId=58eb98b2ae25a91ca33a18287ac0ec9f"><img src="images/amazonbadge.png" height="40" width="112"></a></td>
+        <td>Buy it from Amazon</td>
+        </tr>
+        <tr>
+        <td><a href="https://geo.itunes.apple.com/us/book/inferno-cassandras-call/id1403204436?mt=11&at=1010lMFQ"><img src="https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/ibooks-lrg.svg" height="40" width="112"></a></td>
+        <td>Buy it from Apple</td>
+        </tr>
+        <tr>
+        <td><a href="https://click.linksynergy.com/link?id=fLFk6zu2fjk&offerid=551651.571109781946406002&type=2&murl=https%3A%2F%2Fwww.kobo.com%2Fus%2Fen%2Febook%2Finferno-cassandra-s-call"><img src="images/kobo.jpg" height="40" width="112"></a></td>
+        <td>Buy it from Kobo</td>
+        </tr>
+        </table>
+        </div>
     <h2>Coming Soon</h2>
-      <h3>Inferno #2: In Elven Woods</h3>     
+        <div class="book">
+        <h3>Inferno #2: In Elven Woods</h3>
+        <p>Cassandra&rsquo;s party seeks out the wisdom of the elves, but an encounter with a young half-elf warrior changes the course of their adventure.</p>
+        </div>
       </div>
   </main>
   <footer>

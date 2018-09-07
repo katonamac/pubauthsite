@@ -1,4 +1,4 @@
-body { background-color: #000000; color: #FFFFFF;
+body { background-color: #222222; color: #FFFFFF;
        font-family: Ubuntu, sans-serif; }
 
 header { background-image: url(images/bigknife.jpg); background-size: cover;
@@ -19,16 +19,27 @@ nav a:link { color: #FFFFFF; }
 nav a:visited { color: #FFFFFF; }
 nav a:hover { text-shadow: 3px 3px 10px #FF8800; }
 
-main { background-color: #222222; }
+main h2 { text-align: center; }
 
 main a:link { color: #FF8800; }
 main a:visited { color: #AAAAAA; }
 main a:hover { color: #BBBB00; }
 
-.signup { background-color: #555555; }
+#signup { background-color: #555555; padding: 10px; border-radius: 15px; }
+#signup h3 { font-size: 1.5em; color: #000000; font-style: italic; padding-left: 10px; }
+#signup label { float: left; width: 150px; margin-top: 5px; 
+                clear: left; text-align: right; padding-right: 20px; }
+#signup input { margin-top: 10px; display: block; }
+#sub { margin-left: 170px; }
+#unsub { margin-left: 170px; }
 
-.content { width: 80%; margin: auto; }
+.content { width: 60%; margin: auto; padding-bottom: 2%; }
 .content dt { font-size: 1.2em; font-weight: bold; padding-top: 2%; }
+
+.book { background-color: #000000; padding: 5%; border-radius: 15px; }
+.book img { float: left; margin: 2%; }
+.book table { margin: 2%; }
+.book td { padding: 0.5em; }
 
 footer { text-align: center; padding: 1em;
              background-color: #000000; color: #EEEEEE; }
@@ -37,13 +48,7 @@ footer a:link { color: #FFFFFF; }
 footer a:visited { color: #AAAAAA; }
 footer a:hover { color: #FFFF00; }
 
+@media only screen and (max-width: 1024px) { .content { width: 80%; } }
 
-@media only screen and (max-width: 1024px) { 
-              nav a { padding-right: 30px; }
-              footer { margin: auto; }
-}
-
-@media only screen and (max-width: 768px) { 
-              nav { display: block; }
-}
+@media only screen and (max-width: 768px) { nav { display: block; } }
 

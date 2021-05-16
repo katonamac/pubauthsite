@@ -48,13 +48,19 @@ body { font-family: Ubuntu, sans-serif;
   flex: 30%; /* Set the width of the sidebar */
   background-color: #777777; }
 
-#signup { background-color: #FF8844; margin: 10px; padding: 10px; border-radius: 15px; }
-#signup h3 { font-size: 1.5em; color: #000000; font-style: italic; padding-left: 2%; }
-#signup label { float: left; width: 100px; margin-top: 5px; 
+#mc-embedded-subscribe-form { background-color: #FF8844; margin: 10px; padding: 10px; border-radius: 15px; }
+#mc-embedded-subscribe-form h3 { font-size: 1.5em; color: #000000; font-style: italic; padding-left: 2%; }
+.asterisk { color: #880088; }
+.indicates-required { padding-left: 2% }
+
+
+#mc-embedded-subscribe-form label { float: left; width: 100px; margin-top: 5px; 
                 clear: left; text-align: right; padding-right: 20px; }
-#signup input { margin-top: 10px; display: block; }
+#mc-embedded-subscribe-form input { margin-top: 10px; display: block; }
+/* Commenting out possible unneeded buttons
 #sub { margin-left: 100px; }
 #unsub { margin-left: 100px; }
+*/
 
 .minimenu { background-color: #DD6622; margin: 10px; padding: 20px; border-radius: 15px; }
 

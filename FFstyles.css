@@ -1,17 +1,123 @@
+body { font-family: Ubuntu, sans-serif;
+  background-color: #000000; }
+
+.header {
+  padding: 80px; font-family: 'Cinzel', serif; text-align: center;
+  background-image: url(images/stockfirepic.jpg); 
+  color: #000000; text-shadow: 0 0 20px #EEEEEE; }
+
+.header h1 { font-size: 5em; padding-top: 5%; }
+
+.header h2 { font-size: 2.5em; font-style: italic; }
+  
+/* Style the top navigation bar */
+.navbar { font-size: 1.5em;
+  overflow: hidden; /* Hide overflow */
+  background-color: #000000; }
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */ }
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */ }
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */ }
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box; }
+
+/* Column container */
+.row { 
+  display: flex;
+  flex-wrap: wrap; }
+
+/* Create two unequal columns that sit next to each other */
+/* Sidebar/left column */
+.sidebar {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #777777; }
+
+#signup { background-color: #FF8844; margin: 10px; padding: 10px; border-radius: 15px; }
+#signup h3 { font-size: 1.5em; color: #000000; font-style: italic; padding-left: 2%; }
+#signup label { float: left; width: 100px; margin-top: 5px; 
+                clear: left; text-align: right; padding-right: 20px; }
+#signup input { margin-top: 10px; display: block; }
+#sub { margin-left: 100px; }
+#unsub { margin-left: 100px; }
+
+.minimenu { background-color: #DD6622; margin: 10px; padding: 20px; border-radius: 15px; }
+
+/* Main column */
+.main { 
+  flex: 70%; /* Set the width of the main content */
+  background-color: #FFFFFF; padding: 5%; }
+
+.main dt { font-weight: bold; padding-top: 1%; }
+
+table.title { width: 100%; text-align: left; }
+table.title td { padding-left: 5%; }
+table.title h2 { font-size: 2.5em; }
+
+.book { background-color: #000000; color: #FFFFFF; width: 350px;
+        text-align: center; margin-left: auto; margin-right: auto; padding: 5%; border-radius: 15px; }
+        
+.button { background: #ff9900; background: linear-gradient(#ff9900, #783f04); border-radius: 5px;
+          padding: 8px 20px; color: #ffffff; display: block; text-decoration: none; width: 225px;
+          margin-bottom: 10px; margin-left: auto; margin-right: auto;
+          font-weight: bold; text-align: center; text-shadow: 2px 2px #000000; }
+
+#warning { color: #DD0000; font-weight: bold; font-size: 2em; font-family: 'Cinzel', serif; text-align: center; }
+  
+.footer { text-align: center; padding: 1em;
+          background-color: #000000; color: #EEEEEE; }
+          
+.footer a:link { color: #EEEEEE; }
+.footer a:visited { color: #AAAAAA; }
+.footer a:hover { color: #FFAA00; }
+  
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row { 
+    flex-direction: column; } 
+  
+  .book { width: 300px; } }
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .header h1 { font-size: 3em; padding-top: 5%; }
+
+  .header h2 { font-size: 1.5em; font-style: italic; }
+
+  .navbar a {
+    float: none;
+    width: 100%; } }  
+
+/* Commented out the old styles
 body { background-color: #222222; color: #FFFFFF;
        font-family: Ubuntu, sans-serif; }
 
-header { background-image: url(images/bigknife.jpg); background-size: cover;
-         color: #000000; padding-left: 10%; }
+header { background-image: url(images/topbanner.png); background-size: cover;
+         color: #000000; }
 
-header h1 { font-size: 4em; font-family: Shrikhand, cursive; margin-top: 0;
-            padding-top: 5%; text-shadow: 0 0 5px #EEEEEE; }
+header h1 { font-size: 5em; font-family: Shrikhand, cursive; margin-top: 0; padding-top: 5%; 
+			text-align: center; text-shadow: 0 0 5px #EEEEEE; }
              
 header h2 { font-size: 3em; font-family: Ubuntu, sans-serif; padding-left: 2%;
-            font-style: italic; padding-bottom: 5%; margin-bottom: 0; text-shadow: 0 0 10px #FF8800; }
+            font-style: italic; padding-bottom: 5%; margin-bottom: 0; text-shadow: 0 0 10px #EEEEEE; }
 
-nav { background-image: url(images/stockfirepic.jpg); background-color: #000000; text-align: center;
-        padding: 0.3em; font-size: 2em; font-family: Ubuntu, sans-serif; margin-bottom: 0; }
+nav { background-color: #000000; text-align: center;
+        padding: 0.3em; font-size: 1.5em; font-family: Ubuntu, sans-serif; margin-bottom: 0; }
 
 nav a { text-decoration: none; padding-right: 70px; }
 
@@ -34,7 +140,9 @@ main a:hover { color: #BBBB00; }
 #unsub { margin-left: 170px; }
 
 .content { width: 60%; margin: auto; padding-bottom: 2%; }
+.content h4 { padding-left: 2%; padding-bottom: 2%; }
 .content dt { font-size: 1.2em; font-weight: bold; padding-top: 2%; }
+.content img { float: left; margin-right: 2%; margin-bottom: 5%; }
 
 .book { background-color: #000000; padding: 5%; border-radius: 15px; }
 .book img { float: left; margin: 2%; }
@@ -50,5 +158,5 @@ footer a:hover { color: #FFFF00; }
 
 @media only screen and (max-width: 1024px) { .content { width: 80%; } }
 
-@media only screen and (max-width: 768px) { nav { display: block; } }
+@media only screen and (max-width: 768px) { nav { display: block; } }*/
 

@@ -8,11 +8,11 @@ Things that the website absolutely must have:
 3. Information about new releases
 4. An e-mail signup so I can start developing a mailing list
 5. An "about" page for the author (me)
-6. A link to my Patreon which doubles as the blog/community
+6. A link to a donation/support page
 
 Things that would be nice to have eventually:
 1. Blurbs from readers/reviewers
-2. An in-house community (not kicking people over to Patreon)
+2. An in-house community
 3. Bonus material/teasers
 4. Promotional art
 5. More interactivity in general

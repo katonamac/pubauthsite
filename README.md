@@ -19,8 +19,8 @@ Things that would be nice to have eventually:
 6. A setup whereby someone who isn't me can manage the damn thing
 
 The skills I hope to practice:
--HTML5
--CSS
--PHP
--Python
--Working from the command line
+- HTML5
+- CSS
+- PHP
+- Python
+- Working from the command line
